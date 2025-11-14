@@ -1,1188 +1,663 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Photo Gallery - Daksh Foundation</title>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body id="top">
-    <div class="top-bar">
-      <div class="top-bar-content">
-        <div class="social-links">
-          <a
-            href="https://www.instagram.com/daksh_foundation?igsh=NDkwbmc5b2ltdG1y"
-            aria-label="Instagram"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a
-            href="https://www.facebook.com/DakshFoundationNGO"
-            aria-label="Facebook"
-            ><i class="fab fa-facebook"></i
-          ></a>
-          <a href="https://x.com/NgoDaksh" aria-label="Twitter"
-            ><i class="fa-brands fa-x-twitter"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/company/daksh-foundation18/"
-            aria-label="LinkedIn"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a
-            href="https://www.youtube.com/@CSR_DAKSHFOUNDATION"
-            aria-label="YouTube"
-            ><i class="fab fa-youtube"></i
-          ></a>
-        </div>
-        <div class="top-buttons">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photo Gallery - Daksh Foundation</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="top">
+  <div class="top-bar">
+    <div class="top-bar-content">
+      <div class="social-links">
+        <a href="https://www.instagram.com/daksh_foundation?igsh=NDkwbmc5b2ltdG1y" aria-label="Instagram"><i
+            class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/DakshFoundationNGO" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://x.com/NgoDaksh" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/daksh-foundation18/" aria-label="LinkedIn"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/@CSR_DAKSHFOUNDATION" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="top-buttons">
+        <a href="#" class="btn-donate">Registration</a>
+        <a href="#" class="btn-sponsor">E-Learning</a>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="logo">
+        <a href="index.html"><img src="header.webp" alt="Daksh Foundation Logo" /></a>
+      </div>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="programs.html">Our Programs</a></li>
+        <li><a href="gallery.html" class="active">Photo Gallery</a></li>
+        <li><a href="Partnerwithus.html">Partner With Us</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="menu-buttons">
           <a href="#" class="btn-donate">Registration</a>
           <a href="#" class="btn-sponsor">E-Learning</a>
-        </div>
+        </li>
+      </ul>
+      <div class="nav-badge">
+        <img src="assets/Badge.webp" alt="NGO Badge" />
       </div>
     </div>
-    <nav class="navbar">
-      <div class="nav-content">
-        <div class="logo">
-          <a href="index.html"
-            ><img src="header.webp" alt="Daksh Foundation Logo"
-          /></a>
+  </nav>
+  <main>
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title pink">Photo Gallery</h2>
+          <p class="section-subtitle">
+            Capturing moments of impact and transformation across our
+            initiatives.
+          </p>
         </div>
-        <button class="mobile-menu-toggle" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
+        <div class="gallery-tabs-container">
+          <div class="gallery-tabs">
+            <button class="tab-btn active" data-tab="all">All</button>
+            <button class="tab-btn" data-tab="environment">
+              Environment & Waste
+            </button>
+            <button class="tab-btn" data-tab="healthcare">Healthcare</button>
+            <button class="tab-btn" data-tab="skill">Skills & Livelihood</button>
+            <button class="tab-btn" data-tab="water">
+              Water & Sanitation
+            </button>
+          </div>
+          <div class="tab-indicator"></div>
+        </div>
+        <div class="tab-contents">
+          <div id="all" class="tab-pane active">
+            <div class="gallery-grid">
+              <div class="gallery-item">
+                <img src="assets/Media/Skill Management/0001.webp" alt="Skill Management Gallery Image 1" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/001.webp" alt="Skill Management Gallery Image 1" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/01.webp" alt="Skill Management Gallery Image 1" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/1.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/2.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/3.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/4.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/5.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/6.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/7.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/8.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/9.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/10.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/11.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/12.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/13.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/14.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/15.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/16.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/17.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/18.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/19.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/20.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/21.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/22.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/23.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/24.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/25.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/26.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/27.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/28.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/29.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/30.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/31.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/32.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/33.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/all/34.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Skill Management/01.webp" alt="Skill Management Gallery Image 3" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/1.webp" alt="Water & Sanitary Gallery Image 1" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/10.webp" alt="Water & Sanitary Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/11.webp" alt="Water & Sanitary Gallery Image 3" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/12.webp" alt="Water & Sanitary Gallery Image 3" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/13.webp" alt="Water & Sanitary Gallery Image 3" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/14.webp" alt="Water & Sanitary Gallery Image 3" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/15.webp" alt="Water & Sanitary Gallery Image 3" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/16.webp" alt="Water & Sanitary Gallery Image 3" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/17.webp" alt="Water & Sanitary Gallery Image 3" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/18.webp" alt="Water & Sanitary Gallery Image 3" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/19.webp" alt="Water & Sanitary Gallery Image 3" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/2.webp" alt="Water & Sanitary Gallery Image 4" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Healthcare/17.webp" alt="Healthcare Gallery Image 6" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Healthcare/18.webp" alt="Healthcare Gallery Image 7" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Healthcare/21.webp" alt="Healthcare Gallery Image 8" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Healthcare/22.webp" alt="Healthcare Gallery Image 9" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Healthcare/31.webp" alt="Healthcare Gallery Image 10" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Healthcare/32.webp" alt="Healthcare Gallery Image 11" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/3.webp" alt="Water & Sanitary Gallery Image 5" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/4.webp" alt="Water & Sanitary Gallery Image 6" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/5.webp" alt="Water & Sanitary Gallery Image 7" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/6.webp" alt="Water & Sanitary Gallery Image 8" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/7.webp" alt="Water & Sanitary Gallery Image 9" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/8.webp" alt="Water & Sanitary Gallery Image 10" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/9.webp" alt="Water & Sanitary Gallery Image 11" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Skill Management/02.webp" alt="Skill Management Gallery Image 4" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Healthcare/00.webp" alt="Healthcare Gallery Image 1" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Healthcare/01.webp" alt="Healthcare Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Environment & Waste/01.webp" alt="Environment Gallery Image 1" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/1.webp" alt="Water Gallery Image 1" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+            </div>
+          </div>
+          <div id="environment" class="tab-pane">
+            <div class="gallery-grid">
+              <div class="gallery-item">
+                <img src="assets/Media/Environment & Waste/01.webp" alt="Environment & Waste Gallery Image 1"
+                  loading="lazy" onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Environment & Waste/02.webp" alt="Environment & Waste Gallery Image 2"
+                  loading="lazy" onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Environment & Waste/03.webp" alt="Environment & Waste Gallery Image 3"
+                  loading="lazy" onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Environment & Waste/04.webp" alt="Environment & Waste Gallery Image 4"
+                  loading="lazy" onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Environment & Waste/05.webp" alt="Environment & Waste Gallery Image 5"
+                  loading="lazy" onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Environment & Waste/06.webp" alt="Environment & Waste Gallery Image 6"
+                  loading="lazy" onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Environment & Waste/07.webp" alt="Environment & Waste Gallery Image 7"
+                  loading="lazy" onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Environment & Waste/08.webp" alt="Environment & Waste Gallery Image 8"
+                  loading="lazy" onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Environment & Waste/09.webp" alt="Environment & Waste Gallery Image 9"
+                  loading="lazy" onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Environment & Waste/10.webp" alt="Environment & Waste Gallery Image 10"
+                  loading="lazy" onclick="openLightbox(this.src)" />
+              </div>
+            </div>
+          </div>
+          <div id="healthcare" class="tab-pane">
+            <div class="gallery-grid">
+              <div class="gallery-item">
+                <img src="assets/Media/Healthcare/00.webp" alt="Healthcare Gallery Image 1" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Healthcare/01.webp" alt="Healthcare Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Healthcare/11.webp" alt="Healthcare Gallery Image 3" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Healthcare/12.webp" alt="Healthcare Gallery Image 4" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Healthcare/13.webp" alt="Healthcare Gallery Image 5" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Healthcare/14.webp" alt="Healthcare Gallery Image 5" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Healthcare/15.webp" alt="Healthcare Gallery Image 5" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Healthcare/16.webp" alt="Healthcare Gallery Image 5" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Healthcare/17.webp" alt="Healthcare Gallery Image 6" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Healthcare/18.webp" alt="Healthcare Gallery Image 7" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Healthcare/21.webp" alt="Healthcare Gallery Image 8" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Healthcare/22.webp" alt="Healthcare Gallery Image 9" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Healthcare/31.webp" alt="Healthcare Gallery Image 10" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Healthcare/32.webp" alt="Healthcare Gallery Image 11" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+            </div>
+          </div>
+          <div id="skill" class="tab-pane">
+            <div class="gallery-grid">
+              <div class="gallery-item">
+                <img src="assets/Media/Skill Management/0001.webp" alt="Skill Management Gallery Image 1" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Skill Management/001.webp" alt="Skill Management Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Skill Management/01.webp" alt="Skill Management Gallery Image 3" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Skill Management/02.webp" alt="Skill Management Gallery Image 4" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Skill Management/03.webp" alt="Skill Management Gallery Image 5" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Skill Management/a.webp" alt="Skill Management Gallery Image 6" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Skill Management/b.webp" alt="Skill Management Gallery Image 7" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Skill Management/c.webp" alt="Skill Management Gallery Image 8" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Skill Management/Hero.webp" alt="Skill Management Gallery Image 9" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+            </div>
+          </div>
+          <div id="water" class="tab-pane">
+            <div class="gallery-grid">
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/1.webp" alt="Water & Sanitary Gallery Image 1" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/10.webp" alt="Water & Sanitary Gallery Image 2" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/11.webp" alt="Water & Sanitary Gallery Image 3" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/12.webp" alt="Water & Sanitary Gallery Image 3" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/13.webp" alt="Water & Sanitary Gallery Image 3" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/14.webp" alt="Water & Sanitary Gallery Image 3" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/15.webp" alt="Water & Sanitary Gallery Image 3" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/16.webp" alt="Water & Sanitary Gallery Image 3" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/17.webp" alt="Water & Sanitary Gallery Image 3" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/18.webp" alt="Water & Sanitary Gallery Image 3" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/19.webp" alt="Water & Sanitary Gallery Image 3" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/2.webp" alt="Water & Sanitary Gallery Image 4" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/3.webp" alt="Water & Sanitary Gallery Image 5" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/4.webp" alt="Water & Sanitary Gallery Image 6" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/5.webp" alt="Water & Sanitary Gallery Image 7" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/6.webp" alt="Water & Sanitary Gallery Image 8" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/7.webp" alt="Water & Sanitary Gallery Image 9" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/8.webp" alt="Water & Sanitary Gallery Image 10" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+              <div class="gallery-item">
+                <img src="assets/Media/Water & Sanitary/9.webp" alt="Water & Sanitary Gallery Image 11" loading="lazy"
+                  onclick="openLightbox(this.src)" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" />
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <img src="footer.webp" alt="Daksh Foundation Logo" class="footer-logo" />
+      </div>
+      <div class="footer-col contact-details">
+        <h4>CONTACT US</h4>
+        <p>
+          <strong>Corporate Office:</strong><br />
+          Napier Town, Jabalpur, M.P 482001.
+        </p>
+        <p>
+          <strong>Email ID:</strong><br />
+          <a href="mailto:dakshf.india@gmail.com ">dakshf.india@gmail.com </a>
+        </p>
+        <p>
+          <strong>Phone Number:</strong><br />
+          9926439124, 9302742400
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>LINKS</h4>
+        <ul>
           <li><a href="about.html">About Us</a></li>
-          <li><a href="programs.html">Our Programs</a></li>
-          <li><a href="gallery.html" class="active">Photo Gallery</a></li>
-          <li><a href="Partnerwithus.html">Partner With Us</a></li>
-          <li><a href="career.html">Career</a></li>
           <li><a href="contact.html">Contact Us</a></li>
-          <li class="menu-buttons">
-            <a href="#" class="btn-donate">Registration</a>
-            <a href="#" class="btn-sponsor">E-Learning</a>
-          </li>
+          <li><a href="#">Donate Now</a></li>
+          <li><a href="tnc.html">Terms & Conditions</a></li>
+          <li><a href="privacypolicy.html">Privacy Policy</a></li>
         </ul>
-        <div class="nav-badge">
-          <img src="assets/Badge.webp" alt="NGO Badge" />
-        </div>
       </div>
-    </nav>
-    <main>
-      <section class="gallery" id="gallery">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title pink">Photo Gallery</h2>
-            <p class="section-subtitle">
-              Capturing moments of impact and transformation across our
-              initiatives.
-            </p>
-          </div>
-          <div class="gallery-tabs-container">
-            <div class="gallery-tabs">
-              <button class="tab-btn active" data-tab="all">All</button>
-              <button class="tab-btn" data-tab="environment">
-                Environment & Waste
-              </button>
-              <button class="tab-btn" data-tab="healthcare">Healthcare</button>
-              <button class="tab-btn" data-tab="skill">Skill Management</button>
-              <button class="tab-btn" data-tab="water">
-                Water & Sanitation
-              </button>
-            </div>
-            <div class="tab-indicator"></div>
-          </div>
-          <div class="tab-contents">
-            <div id="all" class="tab-pane active">
-              <div class="gallery-grid">
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Skill Management/0001.webp"
-                    alt="Skill Management Gallery Image 1"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/001.webp"
-                    alt="Skill Management Gallery Image 1"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/01.webp"
-                    alt="Skill Management Gallery Image 1"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/1.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/2.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/3.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/4.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/5.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/6.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/7.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/8.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/9.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/10.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/11.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/12.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/13.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/14.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/15.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/16.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/17.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/18.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/19.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/20.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/21.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/22.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/23.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/24.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/25.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/26.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/27.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/28.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/29.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/30.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/31.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/32.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/33.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/all/34.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Skill Management/01.webp"
-                    alt="Skill Management Gallery Image 3"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/1.webp"
-                    alt="Water & Sanitary Gallery Image 1"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/10.webp"
-                    alt="Water & Sanitary Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/11.webp"
-                    alt="Water & Sanitary Gallery Image 3"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/12.webp"
-                    alt="Water & Sanitary Gallery Image 3"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/13.webp"
-                    alt="Water & Sanitary Gallery Image 3"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/14.webp"
-                    alt="Water & Sanitary Gallery Image 3"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/15.webp"
-                    alt="Water & Sanitary Gallery Image 3"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/16.webp"
-                    alt="Water & Sanitary Gallery Image 3"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/17.webp"
-                    alt="Water & Sanitary Gallery Image 3"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/18.webp"
-                    alt="Water & Sanitary Gallery Image 3"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/19.webp"
-                    alt="Water & Sanitary Gallery Image 3"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/2.webp"
-                    alt="Water & Sanitary Gallery Image 4"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Healthcare/17.webp"
-                    alt="Healthcare Gallery Image 6"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Healthcare/18.webp"
-                    alt="Healthcare Gallery Image 7"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Healthcare/21.webp"
-                    alt="Healthcare Gallery Image 8"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Healthcare/22.webp"
-                    alt="Healthcare Gallery Image 9"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Healthcare/31.webp"
-                    alt="Healthcare Gallery Image 10"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Healthcare/32.webp"
-                    alt="Healthcare Gallery Image 11"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/3.webp"
-                    alt="Water & Sanitary Gallery Image 5"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/4.webp"
-                    alt="Water & Sanitary Gallery Image 6"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/5.webp"
-                    alt="Water & Sanitary Gallery Image 7"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/6.webp"
-                    alt="Water & Sanitary Gallery Image 8"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/7.webp"
-                    alt="Water & Sanitary Gallery Image 9"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/8.webp"
-                    alt="Water & Sanitary Gallery Image 10"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/9.webp"
-                    alt="Water & Sanitary Gallery Image 11"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Skill Management/02.webp"
-                    alt="Skill Management Gallery Image 4"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Healthcare/00.webp"
-                    alt="Healthcare Gallery Image 1"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Healthcare/01.webp"
-                    alt="Healthcare Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Environment & Waste/01.webp"
-                    alt="Environment Gallery Image 1"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/1.webp"
-                    alt="Water Gallery Image 1"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-              </div>
-            </div>
-            <div id="environment" class="tab-pane">
-              <div class="gallery-grid">
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Environment & Waste/01.webp"
-                    alt="Environment & Waste Gallery Image 1"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Environment & Waste/02.webp"
-                    alt="Environment & Waste Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Environment & Waste/03.webp"
-                    alt="Environment & Waste Gallery Image 3"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Environment & Waste/04.webp"
-                    alt="Environment & Waste Gallery Image 4"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Environment & Waste/05.webp"
-                    alt="Environment & Waste Gallery Image 5"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Environment & Waste/06.webp"
-                    alt="Environment & Waste Gallery Image 6"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Environment & Waste/07.webp"
-                    alt="Environment & Waste Gallery Image 7"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Environment & Waste/08.webp"
-                    alt="Environment & Waste Gallery Image 8"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Environment & Waste/09.webp"
-                    alt="Environment & Waste Gallery Image 9"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Environment & Waste/10.webp"
-                    alt="Environment & Waste Gallery Image 10"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-              </div>
-            </div>
-            <div id="healthcare" class="tab-pane">
-              <div class="gallery-grid">
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Healthcare/00.webp"
-                    alt="Healthcare Gallery Image 1"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Healthcare/01.webp"
-                    alt="Healthcare Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Healthcare/11.webp"
-                    alt="Healthcare Gallery Image 3"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Healthcare/12.webp"
-                    alt="Healthcare Gallery Image 4"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Healthcare/13.webp"
-                    alt="Healthcare Gallery Image 5"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Healthcare/14.webp"
-                    alt="Healthcare Gallery Image 5"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Healthcare/15.webp"
-                    alt="Healthcare Gallery Image 5"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Healthcare/16.webp"
-                    alt="Healthcare Gallery Image 5"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Healthcare/17.webp"
-                    alt="Healthcare Gallery Image 6"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Healthcare/18.webp"
-                    alt="Healthcare Gallery Image 7"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Healthcare/21.webp"
-                    alt="Healthcare Gallery Image 8"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Healthcare/22.webp"
-                    alt="Healthcare Gallery Image 9"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Healthcare/31.webp"
-                    alt="Healthcare Gallery Image 10"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Healthcare/32.webp"
-                    alt="Healthcare Gallery Image 11"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-              </div>
-            </div>
-            <div id="skill" class="tab-pane">
-              <div class="gallery-grid">
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Skill Management/0001.webp"
-                    alt="Skill Management Gallery Image 1"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Skill Management/001.webp"
-                    alt="Skill Management Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Skill Management/01.webp"
-                    alt="Skill Management Gallery Image 3"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Skill Management/02.webp"
-                    alt="Skill Management Gallery Image 4"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Skill Management/03.webp"
-                    alt="Skill Management Gallery Image 5"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Skill Management/a.webp"
-                    alt="Skill Management Gallery Image 6"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Skill Management/b.webp"
-                    alt="Skill Management Gallery Image 7"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Skill Management/c.webp"
-                    alt="Skill Management Gallery Image 8"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Skill Management/Hero.webp"
-                    alt="Skill Management Gallery Image 9"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-              </div>
-            </div>
-            <div id="water" class="tab-pane">
-              <div class="gallery-grid">
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/1.webp"
-                    alt="Water & Sanitary Gallery Image 1"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/10.webp"
-                    alt="Water & Sanitary Gallery Image 2"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/11.webp"
-                    alt="Water & Sanitary Gallery Image 3"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/12.webp"
-                    alt="Water & Sanitary Gallery Image 3"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/13.webp"
-                    alt="Water & Sanitary Gallery Image 3"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/14.webp"
-                    alt="Water & Sanitary Gallery Image 3"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/15.webp"
-                    alt="Water & Sanitary Gallery Image 3"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/16.webp"
-                    alt="Water & Sanitary Gallery Image 3"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/17.webp"
-                    alt="Water & Sanitary Gallery Image 3"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/18.webp"
-                    alt="Water & Sanitary Gallery Image 3"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/19.webp"
-                    alt="Water & Sanitary Gallery Image 3"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/2.webp"
-                    alt="Water & Sanitary Gallery Image 4"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/3.webp"
-                    alt="Water & Sanitary Gallery Image 5"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/4.webp"
-                    alt="Water & Sanitary Gallery Image 6"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/5.webp"
-                    alt="Water & Sanitary Gallery Image 7"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/6.webp"
-                    alt="Water & Sanitary Gallery Image 8"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/7.webp"
-                    alt="Water & Sanitary Gallery Image 9"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/8.webp"
-                    alt="Water & Sanitary Gallery Image 10"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-                <div class="gallery-item">
-                  <img
-                    src="assets/Media/Water & Sanitary/9.webp"
-                    alt="Water & Sanitary Gallery Image 11"
-                    loading="lazy"
-                    onclick="openLightbox(this.src)"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="lightbox">
-      <span class="close" onclick="closeLightbox()">&times;</span>
-      <img class="lightbox-content" id="lightbox-img" />
+      <div class="footer-col">
+        <h4>SUBSCRIBE NOW</h4>
+        <p>Don't miss our future updates! Subscribe Today.</p>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Your email" required />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </div>
-
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-col">
-          <img
-            src="footer.webp"
-            alt="Daksh Foundation Logo"
-            class="footer-logo"
-          />
-        </div>
-        <div class="footer-col contact-details">
-          <h4>CONTACT US</h4>
-          <p>
-            <strong>Corporate Office:</strong><br />
-            Napier Town, Jabalpur, M.P 482001.
-          </p>
-          <p>
-            <strong>Email ID:</strong><br />
-            <a href="mailto:dakshf.india@gmail.com ">dakshf.india@gmail.com </a>
-          </p>
-          <p>
-            <strong>Phone Number:</strong><br />
-            9926439124, 9302742400
-          </p>
-        </div>
-        <div class="footer-col">
-          <h4>LINKS</h4>
-          <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="#">Donate Now</a></li>
-            <li><a href="tnc.html">Terms & Conditions</a></li>
-            <li><a href="privacypolicy.html">Privacy Policy</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>SUBSCRIBE NOW</h4>
-          <p>Don't miss our future updates! Subscribe Today.</p>
-          <form class="subscribe-form">
-            <input type="email" placeholder="Your email" required />
-            <button type="submit">Submit</button>
-          </form>
-        </div>
+    <div class="footer-bottom">
+      <div class="footer-social">
+        <a href="https://www.instagram.com/daksh_foundation?igsh=NDkwbmc5b2ltdG1y" aria-label="Instagram"><i
+            class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/DakshFoundationNGO" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://x.com/NgoDaksh" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/daksh-foundation18/" aria-label="LinkedIn"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/@CSR_DAKSHFOUNDATION" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
       </div>
-      <div class="footer-bottom">
-        <div class="footer-social">
-          <a
-            href="https://www.instagram.com/daksh_foundation?igsh=NDkwbmc5b2ltdG1y"
-            aria-label="Instagram"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a
-            href="https://www.facebook.com/DakshFoundationNGO"
-            aria-label="Facebook"
-            ><i class="fab fa-facebook"></i
-          ></a>
-          <a href="https://x.com/NgoDaksh" aria-label="Twitter"
-            ><i class="fa-brands fa-x-twitter"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/company/daksh-foundation18/"
-            aria-label="LinkedIn"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a
-            href="https://www.youtube.com/@CSR_DAKSHFOUNDATION"
-            aria-label="YouTube"
-            ><i class="fab fa-youtube"></i
-          ></a>
-        </div>
-        <p>Copyright &copy; 2025 Daksh Foundation | All Rights Reserved.</p>
-        <a href="#top" class="back-to-top" aria-label="Back to top">
-          <i class="fas fa-arrow-up"></i>
-        </a>
-      </div>
-    </footer>
-
-    <div class="chat-widget">
-      <a
-        href="https://wa.me/919926439124?text=Hello"
-        target="_blank"
-        class="chat-button"
-        aria-label="Chat with us on WhatsApp"
-      >
-        <i class="fa-brands fa-whatsapp"></i>
+      <p>Copyright &copy; 2025 Daksh Foundation | All Rights Reserved.</p>
+      <a href="#top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
       </a>
     </div>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.27/dist/lenis.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+  <div class="chat-widget">
+    <a href="https://wa.me/919926439124?text=Hello" target="_blank" class="chat-button"
+      aria-label="Chat with us on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.27/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>

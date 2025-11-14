@@ -53,54 +53,54 @@ document.addEventListener("DOMContentLoaded", () => {
     let slideInterval;
 
     if (slides.length > 0) {
-        slides.forEach((_, index) => {
-            const dot = document.createElement("div");
-            dot.classList.add("slider-dot");
-            if (index === 0) dot.classList.add("active");
-            dot.addEventListener("click", () => goToSlide(index));
-            sliderDots.appendChild(dot);
-        });
+      slides.forEach((_, index) => {
+        const dot = document.createElement("div");
+        dot.classList.add("slider-dot");
+        if (index === 0) dot.classList.add("active");
+        dot.addEventListener("click", () => goToSlide(index));
+        sliderDots.appendChild(dot);
+      });
 
-        const dots = document.querySelectorAll(".slider-dot");
+      const dots = document.querySelectorAll(".slider-dot");
 
-        function goToSlide(n) {
-            if (!slides[currentSlide] || !dots[currentSlide]) return;
-            slides[currentSlide].classList.remove("active");
-            dots[currentSlide].classList.remove("active");
-            currentSlide = (n + slides.length) % slides.length;
-            slides[currentSlide].classList.add("active");
-            dots[currentSlide].classList.add("active");
-        }
+      function goToSlide(n) {
+        if (!slides[currentSlide] || !dots[currentSlide]) return;
+        slides[currentSlide].classList.remove("active");
+        dots[currentSlide].classList.remove("active");
+        currentSlide = (n + slides.length) % slides.length;
+        slides[currentSlide].classList.add("active");
+        dots[currentSlide].classList.add("active");
+      }
 
-        function nextSlide() {
-            goToSlide(currentSlide + 1);
-        }
+      function nextSlide() {
+        goToSlide(currentSlide + 1);
+      }
 
-        function startSlideShow() {
-            stopSlideShow(); // Ensure no multiple intervals are running
-            slideInterval = setInterval(nextSlide, 5000);
-        }
+      function startSlideShow() {
+        stopSlideShow(); // Ensure no multiple intervals are running
+        slideInterval = setInterval(nextSlide, 5000);
+      }
 
-        function stopSlideShow() {
-            clearInterval(slideInterval);
-        }
+      function stopSlideShow() {
+        clearInterval(slideInterval);
+      }
 
-        nextBtn?.addEventListener("click", () => {
-            nextSlide();
-            stopSlideShow();
-            setTimeout(startSlideShow, 1000); // Delay restart for smoother feel
-        });
+      nextBtn?.addEventListener("click", () => {
+        nextSlide();
+        stopSlideShow();
+        setTimeout(startSlideShow, 1000); // Delay restart for smoother feel
+      });
 
-        prevBtn?.addEventListener("click", () => {
-            goToSlide(currentSlide - 1);
-            stopSlideShow();
-            setTimeout(startSlideShow, 1000);
-        });
+      prevBtn?.addEventListener("click", () => {
+        goToSlide(currentSlide - 1);
+        stopSlideShow();
+        setTimeout(startSlideShow, 1000);
+      });
 
-        heroSlider.addEventListener("mouseenter", stopSlideShow);
-        heroSlider.addEventListener("mouseleave", startSlideShow);
+      heroSlider.addEventListener("mouseenter", stopSlideShow);
+      heroSlider.addEventListener("mouseleave", startSlideShow);
 
-        startSlideShow();
+      startSlideShow();
     }
   }
 
@@ -244,7 +244,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // --- 9. LIGHTBOX FUNCTIONALITY ---
-  window.openLightbox = function(src) {
+  window.openLightbox = function (src) {
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
     lightboxImg.src = src;
@@ -252,7 +252,7 @@ document.addEventListener("DOMContentLoaded", () => {
     body.classList.add('no-scroll');
   };
 
-  window.closeLightbox = function() {
+  window.closeLightbox = function () {
     const lightbox = document.getElementById('lightbox');
     lightbox.style.display = 'none';
     body.classList.remove('no-scroll');
